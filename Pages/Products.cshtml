@@ -1,0 +1,11 @@
+﻿@page "/Products"
+@using SHOP_Interview.Common.ViewModels
+@using SHOP_Interview.Data.Models
+@model ProductsViewModel
+@{
+}
+
+@foreach (Product product in Model.Products)
+{
+    <h1> @product.ProductId</h1>
+}
