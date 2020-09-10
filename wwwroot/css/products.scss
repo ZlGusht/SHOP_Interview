@@ -1,0 +1,71 @@
+﻿* {
+    font-family: 'Open Sans', sans-serif;
+    transition: all 1s;
+}
+
+hr{
+    border-top: 2px solid dimgrey;
+}
+
+img {
+    object-fit: cover;
+    max-height: 70%;
+    flex-grow: 1;
+    transition: all .5s ease;
+}
+
+h1 {
+    font-size: 80px;
+    color: antiquewhite;
+    margin-top: -5px;
+}
+
+body {
+    background-color: #202020;
+    color: dimgrey;
+}
+
+.hide {
+    margin-bottom: 20px;
+    background-color: rgba(46,46,46, 0.3);
+    justify-self: end;
+    height: 0%;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    * {
+        display: none;
+    }
+}
+
+.product-container {
+    justify-content: center;
+    transition: all 2s;
+    height: 50vh;
+}
+
+.product-container:hover{
+
+    img{
+        max-height: 30%; 
+        justify-self: start;
+    }
+
+    justify-content: start;
+
+    .hide{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        padding: 20px;
+
+        *{
+            display: block;
+        }
+    }
+}
+
+
